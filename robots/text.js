@@ -26,7 +26,7 @@ async function robot() {
     async function fetchContentFromWikipedia(content) {
         const algorithmiaAuthenticated = algorithmia(algorithmiaApiKey)
         const wikipediaAlgorithm = algorithmiaAuthenticated.algo("web/WikipediaParser/0.1.2")
-        const wikipediaResponse = await wikipediaAlgorithm.pipe(content.serchTerm)
+        const wikipediaResponse = await wikipediaAlgorithm.pipe(content.searchTerm)
         const wikipediaContent = wikipediaResponse.get()
 
         content.sourceContentOriginal = wikipediaContent.content
@@ -63,7 +63,7 @@ async function robot() {
         sentences.forEach((sentence) => {
             content.sentences.push({
                 text: sentence,
-                keyword: [],
+                keywords: [],
                 images: []
             })
         })
