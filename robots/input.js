@@ -5,7 +5,7 @@ function robot() {
         maximumSentences: 7
     }
 
-    content.serchTerm = askAndReturnSerchTerm()
+    content.searchTerm = askAndReturnSerchTerm()
     content.prefix = askAndReturnPrefix()
     state.save(content)
     
