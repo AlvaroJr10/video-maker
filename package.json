@@ -19,7 +19,7 @@
   "homepage": "https://github.com/AlvaroJr10/video-maker#readme",
   "dependencies": {
     "algorithmia": "^0.3.10",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "gm": "^1.23.1",
     "googleapis": "^43.0.0",
     "handbrake-js": "^4.0.0",
